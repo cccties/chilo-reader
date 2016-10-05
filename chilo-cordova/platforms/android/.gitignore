@@ -1,0 +1,19 @@
+# Non-project-specific build files:
+build.xml
+local.properties
+/gradlew
+/gradlew.bat
+/gradle
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+gen
+out
+# Gradle builds
+/build/*
+!/build/outputs
+/build/outputs/*
+!/build/outputs/apk
+/build/outputs/apk/*
+!/build/outputs/apk/android-debug.apk

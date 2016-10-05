@@ -1,0 +1,86 @@
+<div class="modal fade" id="about-dialog" tabindex="-1" role="dialog" aria-label="{{{strings.about}}}" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="splash-logo">
+              <img src="{{{imagePathPrefix}}}images/about_readium_logo.png" alt="">
+          </div>
+
+          <div class="about-message">
+              <span>{{{strings.i18n_html_readium_tm_a_project}}}</span>
+          </div>
+          <div>
+                 <img src="{{{imagePathPrefix}}}images/partner_logos.png">
+            </div>
+        <h4 style="color:#111155">{{{strings.gethelp}}}</h4>
+        <div class="version">{{viewerJs.chromeVersion}}</div>
+        <div class="build-date">{{dateTimeString}}</div>
+        <div class="version-details">
+            
+          <div><a target="_blank" href="https://github.com/readium/readium-js-viewer/tree/{{viewerJs.sha}}">readium-js-viewer@{{viewerJs.sha}}</a>{{^viewerJs.clean}}<span class="local-changes-alert"> ({{{strings.gitHasLocalChanges}}})</span>{{/viewerJs.clean}}</div>
+          
+          <div><a target="_blank" href="https://github.com/readium/readium-js/tree/{{readiumJs.sha}}">readium-js@{{readiumJs.sha}}</a>{{^readiumJs.clean}}<span class="local-changes-alert"> ({{{strings.gitHasLocalChanges}}})</span>{{/readiumJs.clean}}</div>
+          
+          <div><a target="_blank" href="https://github.com/readium/readium-shared-js/tree/{{sharedJs.sha}}">readium-shared-js@{{sharedJs.sha}}</a>{{^sharedJs.clean}}<span class="local-changes-alert"> ({{{strings.gitHasLocalChanges}}})</span>{{/sharedJs.clean}}</div>
+          
+          <div><a target="_blank" href="https://github.com/readium/readium-cfi-js/tree/{{cfiJs.sha}}">readium-cfi-js@{{cfiJs.sha}}</a>{{^cfiJs.clean}}<span class="local-changes-alert"> ({{{strings.gitHasLocalChanges}}})</span>{{/cfiJs.clean}}</div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+{{#strings.is_chilo}}
+  {{^strings.is_cordova}}
+
+<div  style="text-align:center;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-label="{{strings.about}}" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"  tabindex="1000" title="{{strings.i18n_close}} {{strings.i18n_details}}" aria-label="{{strings.i18n_close}} {{strings.i18n_details}}">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="nav nav-tabs" role="tablist" aria-owns="tab-butt-style tab-butt-layout tab-butt-keys">
+          <li class="active" role="presentation">
+  	    <button id="tab-butt-style"  title="CHiLOBook" aria-label="CHiLOBook" role='tab' aria-controls="tab-style" data-toggle="tab" data-target="#CHiLOBook">Book</button>
+          </li>
+          <li role="presentation">
+            <button id="tab-butt-layout"  title="CHiLOBookPage" aria-label="CHiLOBookPage" role='tab' aria-controls="tab-layout" data-toggle="tab" data-target="#CHiLOBookPage">Page</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane in active" id="CHiLOBook"><br>
+            <div></div>
+            <div>
+              <a href="http://www.facebook.com/share.php?u={{{strings.ChiloBookUrl}}}" onclick="chilo.snslinkcall(encodeURI(decodeURI(this.href)), 'FBwindow', 'width=554, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;" rel="nofollow"><img src="{{{imagePathPrefix}}}images/fb_ico.png" alt="facebook" width="40" height="40"></a>
+              <a href="http://twitter.com/share?url={{{strings.ChiloBookUrl}}}" onClick="chilo.snslinkcall(encodeURI(decodeURI(this.href)), 'TWwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow"><img src="{{{imagePathPrefix}}}images/tw_ico.png" alt="twitter" width="40" height="40" /></a>
+              <a href="https://plus.google.com/share?url={{{strings.ChiloBookUrl}}}" onClick="chilo.snslinkcall(encodeURI(decodeURI(this.href)), 'Googlewindow', 'width=554, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow"><img src="{{{imagePathPrefix}}}images/google_ico.png" alt="google+" width="40" height="40" /></a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url={{{strings.ChiloBookUrl}}}" onClick="chilo.snslinkcall(encodeURI(decodeURI(this.href)), 'LIwindow', 'width=650, height=533, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow"><img src="{{{imagePathPrefix}}}images/li_ico.png" alt="LinkedIn" width="40" height="40" /></a>
+              <span id="share_line" >
+                <a href="http://line.me/R/msg/text/?{{{strings.ChiloBookUrl}}}" target="_blank"><img src="{{{imagePathPrefix}}}images/line_ico.png" alt="LINE" width="40" height="40" /></a>
+              </span>
+              <span id="share_mail" >
+                <a href="mailto:?subject=&body={{{strings.ChiloBookUrl}}}" target="_blank"><img src="{{{imagePathPrefix}}}images/mail_ico.png" alt="LINE" width="40" height="40" /></a>
+              </span>
+            </div><br>
+            <div>
+              <p id="chilo-book-url" style="word-wrap: break-word;"></p>
+            </div>
+            <div id="qrcode1"></div>
+          </div>
+          <div class="tab-pane" id="CHiLOBookPage">
+            <br>
+            <div></div>
+            <div>
+              <p id="chilo-book-page-url" style="word-wrap: break-word;"></p>
+            </div>
+            <div id="qrcode2"></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  {{/strings.is_cordova}}
+{{/strings.is_chilo}}

@@ -1,0 +1,66 @@
+/* NPO CCC-TIES 2015.12.14
+ * 不要なボタンを非表示
+ */
+button.btn.icon-play-audio-background{display: none;}
+button.btn.icon-full-screen{display: none;}
+
+/* NPO CCC-TIES 2016.2.25
+ * navbar周りの色を #4d4d4d から #269ddc に変更
+ */
+.navbar .btn{background-color:#269ddc}
+.navbar{background:#269ddc}
+.navbar-right{background-color:#269ddc}
+.zoom-wrapper input[disabled]{background-color:#269ddc}
+#audioplayer.expanded-audio{background:#269ddc}
+#audioplayer{background:#269ddc}
+#audioExpanded{background-color:#269ddc}
+#time-range-slider{border-left:10px solid #269ddc;border-right:10px solid #269ddc}
+#time-range-slider::-moz-range-track{border-left:10px solid #269ddc;border-right:10px solid #269ddc}
+#mo-highlighters{background-color:#269ddc}
+#mo-highlighter-0{background-color:#269ddc!important}
+
+/* NPO CCC-TIES 2016.3.10
+ * ナビバーとページめくりボタンを自動的に透過する処理を無効
+ */
+.hide-ui .navbar{opacity:1;}
+.hide-ui #right-page-btn{opacity:.3;}
+.hide-ui #left-page-btn{opacity:.3;}
+
+/* NPO CCC-TIES 2016.3.10
+ * ブック内のヘッダータイトルを非表示
+ */
+.book-title-header{display: none;}
+
+/* NPO CCC-TIES 2016.3.17
+ * ロゴの大きさを調整
+ */
+button.btn.icon-logo{width:82px;background-size:auto !important;}
+.navbar .icon-logo:active{width:82px;background-size:auto auto !important;}
+
+/* NPO CCC-TIES 2016.3.29
+ * ロゴが左により過ぎているのを修正
+ */
+.navbar-left{padding-left:10px;}
+
+/* NPO CCC-TIES 2016.3.29
+ * TOCの行間を修正
+ */
+#readium-toc-body > ol > li{margin-top:5px !important;margin-bottom:5px !important;}
+#readium-toc-body > ol > li > ol{margin-top:0px !important;margin-bottom:10px !important;}
+
+/* NPO CCC-TIES 2016.3.29
+ * 現在表示中のTOCにあるリンクの色を変更
+ */
+.toc-selected{color:#ECA130 !important;}
+
+/* NPO CCC-TIES 2016.6.17
+ * ナビバーのボタンの間隔を狭める
+ */
+.navbar .btn{width:40px;  !important;}
+
+/* NPO CCC-TIES 2016.6.24
+ * ロゴ イメージファイル指定
+ */
+.navbar .icon-logo, .navbar .icon-logo:active{
+  background-image: url('../chilo/chilo_logo.png');
+}
