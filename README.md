@@ -67,7 +67,7 @@ When readium-js-viewer is modified, build chilo-cordova after copying  dist/chil
 APK file created with chilo-cordova is the CHiLO Reader App.
 
 Refer to the following for the usage of the app:  
-http://docs.cccties.org/downloading/chilo-reader/
+http://docs.cccties.org/en/downloading/chilo-reader/
 
 ##Cloud CHiLO Reader
 
