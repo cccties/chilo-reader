@@ -62,7 +62,7 @@ When built, the following APK file is created:
 
 When readium-js-viewer is modified, build chilo-cordova after copying  dist/chilo of readium-js-viewer to www/reader_script.
 
-##Android Cordova version CHiLO Reader App
+##chilo-cordova APK
 
 APK file created with chilo-cordova is the CHiLO Reader App.
 
