@@ -3,7 +3,7 @@
 ##Outline
 
 CHiLO Reader is a dedicated e-book reader for CHiLO Books created based on [readium-is-viewer](https://github.com/readium/readium-js-viewer "readium-is-viewer").   
-Two types are available: one is a dedicated online script to put the CHiLO Reader on the web server to enable browsing CHiLO Books on the internet, and the other is an app to install on Android devices.
+Two types are available: one is "chilo-cordova"; an app to install on Android devices, and the other is "Cloud CHiLO Reader"; a dedicated online script to put the CHiLO Reader on the web server to enable browsing CHiLO Books on the internet.
 
 This release includes the following directory:  
 * readium-js-viewer  |  File modified for CHiLO Reader from readium-js-viewer  
