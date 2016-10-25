@@ -1,4 +1,4 @@
-#chilo-reader-engine
+#chilo-reader
 
 ##Outline
 
