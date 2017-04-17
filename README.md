@@ -1,6 +1,6 @@
-#chilo-reader
+# chilo-reader
 
-##Outline
+## Outline
 
 CHiLO Reader is a dedicated e-book reader for CHiLO Books created based on [readium-is-viewer](https://github.com/readium/readium-js-viewer "readium-is-viewer").   
 Two types are available: one is "chilo-cordova"; an app to install on Android devices, and the other is "Cloud CHiLO Reader"; a dedicated online script to put the CHiLO Reader on the web server to enable browsing CHiLO Books on the internet.
@@ -9,13 +9,13 @@ This release includes the following directory:
 * readium-js-viewer  |  File modified for CHiLO Reader from readium-js-viewer  
 * chilo-cordova    |   Android Cordova version CHiLO Reader App
 
-##Developing environment
+## Developing environment
 
 * The build was done by running the command line using Ubuntu 14.04 LTS  
 * Cloud CHiLO Reader was tested in Windows version Chrome browser.  
 * Debugged using Windows version Chrome Developer Tools by connecting Android devices via Windows' USB port
 
-##readium-js-viewer
+## readium-js-viewer
 
 "readium-js-viewer" directory is adding the following modifications to https://github.com/readium/readium-js-viewer for CHiLO Reader engine  
 * Generate readium-js-viewer_all_CHILO.js
@@ -36,7 +36,7 @@ https://github.com/readium/readium-js-viewer/
 
 When readium-js-viewer in github updates and build cannot be done, alter appropriately the source modified for CHiLO Reader engine.
 
-##chilo-cordova
+## chilo-cordova
 
 "chilo-cordova" is an app directory including Android platform created with cordova command adding the following modifications:  
 * Copy readium-js-viewer dist/chilo to www/reader_script
@@ -81,10 +81,10 @@ Also, redirect the path written in index.html,reader.html of the CHiLO Producer 
 About CHiLO Producer, refer to the following:
 https://github.com/cccties/chilo-producer
 
-##Licensing
+## Licensing
 
 We offer CHiLO Producer under the license of ApacheLicense2.0. (See [LICENSE.txt](LICENSE.txt)) 
 
-##Copyright
+## Copyright
 
 Copyright © 2016 NPO CCC-TIES All Right Reserved.
