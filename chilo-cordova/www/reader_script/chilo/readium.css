@@ -34,8 +34,8 @@ button.btn.icon-full-screen{display: none;}
 /* NPO CCC-TIES 2016.3.17
  * ロゴの大きさを調整
  */
-button.btn.icon-logo{width:82px;background-size:auto !important;}
-.navbar .icon-logo:active{width:82px;background-size:auto auto !important;}
+button.btn.icon-logo{width:68px;background-size:auto !important;}
+.navbar .icon-logo:active{width:68px;background-size:auto auto !important;}
 
 /* NPO CCC-TIES 2016.3.29
  * ロゴが左により過ぎているのを修正
