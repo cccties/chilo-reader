@@ -64,3 +64,26 @@ button.btn.icon-logo{width:82px;background-size:auto !important;}
 .navbar .icon-logo, .navbar .icon-logo:active{
   background-image: url('../chilo/chilo_logo.png');
 }
+
+/*
+ * video autoplay
+ */
+
+.navbar .icon-chilo-autoplay {
+  display: none;
+}
+
+.navbar .glyphicon-play {
+  color: #ECA130;
+}
+
+.navbar .popup-autoplay {
+  background-image: url('../chilo/autoplay.png');
+  display: none;
+  width: 208px;
+  height: 64px;
+  background-size: cover;
+  margin-left: -140px;
+  z-index:999;
+  position:absolute;
+}

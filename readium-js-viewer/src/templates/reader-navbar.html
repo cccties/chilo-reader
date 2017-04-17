@@ -239,7 +239,15 @@
     <button onclick="chilo.GetePub()" tabindex="1" type="button" class="btn" title="">
         <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
     </button>
-    <button onclick="chilo.GetSousa()" tabindex="1" type="button" class="btn" title="">
+  {{/strings.is_cordova}}
+    <button onclick="chilo.videoautoplay(this)" tabindex="1" type="button" class="btn icon-chilo-autoplay" title="">
+      <span id="videoautoplaybutton" class="glyphicon glyphicon-play" aria-hidden="true">
+        <br>
+        <div class="popup-autoplay" alt=""></div>
+      </span>
+    </button>
+  {{^strings.is_cordova}}
+    <button onclick="chilo.GetSousa()" tabindex="1" type="button" class="btn icon-chilo-sousa" title="">
       <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
     </button>
   {{/strings.is_cordova}}
