@@ -1,0 +1,31 @@
+﻿リリースノート / Release Notes
+
+////////////////
+// 2017-04-05 //
+////////////////
+
+新機能
+• SMILファイルに従いビデオをページ毎に分割する機能の追加
+• 自動ページめくり機能の追加
+
+仕様変更
+• ページをめくるとビデオを自動再生するように変更
+• ナビゲーションバーのズームメニューアイコンを非表示
+• ロゴイメージの表示サイズを変更
+• ロゴイメージのタイトル属性値を削除
+• ナビゲーションバーのボタンにclass属性値を追加
+• "reader_script" ディレクトリに ".htaccess" ファイルを追加
+
+---
+
+New features
+• Added function to divide the video to each page as described in the SMIL file
+• Added function to turn the page automatically
+
+Specification changes
+• Play the video automatically when a page is turned
+• Hide the zoom menu icon on the navigation bar
+• Changed the size of the logo button in the navigation bar
+• Deleted the title attribute value of the logo image
+• Added class attribute value to the buttons in the navigation bar 
+• Added ".htaccess" file to "reader_script" directory
