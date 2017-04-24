@@ -664,6 +664,7 @@ var VideoAutoPlay = new function() {
             videoDom = null;
             return;
         }
+		$video.attr('playsinline','playsinline');
 		videoDom = $video[0];
 		videoDom.load();
 
