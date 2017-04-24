@@ -1,6 +1,18 @@
 ﻿リリースノート / Release Notes
 
 ////////////////
+// 2017-04-24 //
+////////////////
+
+仕様変更
+• 解説ビデオページの video タグに playsinline 属性を追加
+
+---
+
+Specification changes
+• Added playsinline attribute to the video tag of the explanation video page
+
+////////////////
 // 2017-04-05 //
 ////////////////
 
