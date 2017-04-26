@@ -62,14 +62,14 @@ When built, the following APK file is created:
 
 When readium-js-viewer is modified, build chilo-cordova after copying  dist/chilo of readium-js-viewer to www/reader_script.
 
-##chilo-cordova APK
+## chilo-cordova APK
 
 APK file created with chilo-cordova is the CHiLO Reader App.
 
 Refer to the following for the usage of the app:  
 http://docs.cccties.org/en/downloading/chilo-reader/
 
-##Cloud CHiLO Reader
+## Cloud CHiLO Reader
 
 The www directory of chilo-cordova functions as "Cloud CHiLO Reader" when deployed on the web server without change.
 
@@ -87,4 +87,4 @@ We offer CHiLO Producer under the license of ApacheLicense2.0. (See [LICENSE.txt
 
 ## Copyright
 
-Copyright © 2016 NPO CCC-TIES All Right Reserved.
+Copyright © 2016 NPO CCC-TIES
