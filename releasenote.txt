@@ -1,6 +1,18 @@
 ﻿リリースノート / Release Notes
 
 ////////////////
+// 2017-05-24 //
+////////////////
+
+バグ修正
+• 動画が指定開始位置から再生されない不具合を修正
+
+---
+
+Bug fixes
+• Modified the problem that the video does not play from the specified starting point
+
+////////////////
 // 2017-04-28 //
 ////////////////
 
