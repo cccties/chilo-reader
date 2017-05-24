@@ -562,6 +562,9 @@ var VideoAutoPlay = new function() {
         if(start_time > 0){
 	    debug("handle_seek set start_time");
             do_seek(start_time);
+        }else if(start_time == 0){
+	    debug("handle_seek set start_time 0");
+            do_seek(0.00000000000000001);
         }
     }
 
