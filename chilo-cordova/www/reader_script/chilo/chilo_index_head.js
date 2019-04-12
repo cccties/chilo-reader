@@ -6,7 +6,7 @@ if(ua.match(/iphone/i) || ua.match(/ipod/i) || ua.match(/ipad/i)){
  if(ua.match(/Safari/i)){iOSSa = 1}
  if(ua.match(/CriOS/i) || ua.match(/FxiOS/i)){iOSSa = 0}
  if(iOSSa == 0){
-  alert('iOSの方は Safari ブラウザをご利用ください\niOS users, use Safari browser');
+  // alert('iOSの方は Safari ブラウザをご利用ください\niOS users, use Safari browser');
  }
 }
 
