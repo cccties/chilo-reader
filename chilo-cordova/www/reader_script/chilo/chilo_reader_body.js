@@ -354,6 +354,18 @@ chilo.BadgePage = function(){
  window.open("http://dev.chilos.jp/badges/mybadges.php");
 }
 
+/* NPO CCC-TIES 2019.04.12 add
+ * 現在開いている本のePub版がなければダウンロードボタンを隠す
+ */
+$.ajax({
+    type: 'HEAD',
+    url: chilo.ChiloBookEpubFileUrl,
+    success: function() {
+    },  
+    error: function() {
+      $('.icon-chilo-epub').css('display','none');
+    }
+});
 /* NPO CCC-TIES 2016.03.17 add
  * 現在開いている本のePub版をダウンロード
  */
@@ -713,6 +725,7 @@ var VideoAutoPlay = new function() {
 
         videoDom.addEventListener("volumechange", function(){
             debug("volumechange called: " + videoDom.currentTime + " " + videoDom.volume);
+            v_save_volume();
         });
 
         videoDom.addEventListener("webkitbeginfullscreen", function(e){
@@ -849,11 +862,16 @@ var VideoAutoPlay = new function() {
         if(yt_player != null && $yt_div != null){
             handle_seek(function (t){
                 yt_ct = t;
-                yt_player.seekTo(t, do_autoplay > 0);
+                //yt_player.seekTo(t, do_autoplay > 0);
+                if(yt_ct == "1e-17"){
+                    yt_player.seekTo(0);
+                } else{
+                    yt_player.seekTo(t);
+                }
             });
 
 	    if(yt_ct != 0 && !yt_ios){
-                yt_stop = true;
+                //yt_stop = true;
             }
 
 	    yt_restore_volume();
@@ -920,6 +938,7 @@ var VideoAutoPlay = new function() {
                 yt_player.playVideo();
                 yt_stop = false;
             }
+
         }
     }
 
